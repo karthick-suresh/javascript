@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="box">
+    
+    <div class="inputdiv">
+      <h2>convert celcious  to fahernhiet</h2>
+       <input type="text" id="input" placeholder="degree in celsious">
+       <div>
+        <button id="btn" onclick="convert()">convert to fahernhiet</button>
+      </div>
+      <div id="result">
+
+      </div>
+    </div>
+    
+  </div>
+<script >
+  function convert(){
+    let user_celcious=Number(document.getElementById("input").value)
+    let fahernheit= user_celcious * (9/5) +32
+    let result=document.getElementById("result")
+    result.innerHTML= fahernheit.toFixed(1) + " fahernheit"
+  }
+</script>
+</body>
+</html>

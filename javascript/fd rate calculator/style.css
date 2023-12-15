@@ -1,0 +1,63 @@
+#box{
+    height: 500px;
+    width: 500px;
+    background:linear-gradient(red,green,blue,orange,pink,violet,aqua);
+    position: relative;
+    left: 40px;
+}
+h2{
+    text-align: center;
+    color: aqua;
+}
+.inputdiv{
+    text-align: center;
+    background: linear-gradient(rgba(106, 14, 226, 0.692),yellow,orange,blue);
+    min-height: 400px;
+    min-width: 350px;
+    margin: 60px;
+    position: relative;
+    top: 50px;
+    left: 25px;
+    border:2px solid white;
+
+}
+#input{
+    margin-top: 15px;
+    min-height: 30px;
+    min-width: 250px;
+    padding: 5px;
+    text-align: center;
+    color:red;
+    font-size: 20px;
+    background:rgb(243, 247, 11)
+
+}
+
+#btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: blanchedalmond;
+    color: blue;
+    font-size: 20px;
+}
+#btn:hover{
+    background-color: whitesmoke;
+    color: red;
+    font-size: 20px;
+    height: 60px;
+}
+#result{
+    height: 55px;
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    position: relative;
+    top: 40px;
+    left: 80px;
+    color: rgb(18, 19, 17);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: white;
+}

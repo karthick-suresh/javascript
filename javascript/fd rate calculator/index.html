@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fd rate calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="box">
+    
+    <div class="inputdiv">
+      <h2>fd rate calculator</h2>
+       <input type="text" id="input" placeholder="enter months">
+       <div>
+        <button id="btn" onclick="Rate()">interrest rate</button>
+      </div>
+      <div id="result">
+
+      </div>
+    </div>
+    
+  </div>
+<script >
+ function Rate(){
+  let months = Number(document.querySelector("#input").value)
+  
+  let intrest = 0
+   if(months == 0){
+    intrest = 0
+   }
+  else if(months<3){
+    intrest = 5
+  }
+  else if(months>=3 && months<=5){
+    intrest = 7
+  }
+  else if(months>=6 && months<=9){
+    intrest = 10
+  }
+  else{
+    intrest = 15
+  }
+
+  let result = document.querySelector("#result")
+  result.innerHTML = `your interest is ${intrest} %`
+ }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- function convert(){
+  let cm=Number(document.getElementById("input").value)
+  let inch= cm/2.54
+  let result=document.getElementById("result")
+  result.innerHTML= inch.toFixed(2) + " inches" -->
